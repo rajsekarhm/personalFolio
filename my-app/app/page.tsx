@@ -1,9 +1,9 @@
-import { Navbar } from './components/Navbar'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import Experience from './components/Experience'
-import Resume from './components/Resume'
-import Contact from './components/Contact'
+import { Navbar } from '.././components/Navbar'
+import Hero from '.././components/Hero'
+import Projects from '.././components/Projects'
+import Experience from '.././components/Experience'
+import Resume from '.././components/Resume'
+import Contact from '.././components/Contact'
 
 export default function Home() {
   return (

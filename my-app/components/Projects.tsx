@@ -1,29 +1,18 @@
+"use client";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { motion } from "framer-motion"
+import * as Framermotion from "framer-motion"
+import {Button} from "@/components/ui/button"
+import _image from "./image/immutableX.png"
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    technologies: ["React", "Node.js", "MongoDB"],
-    link: "https://project1.com",
-    image: "/placeholder.svg?height=200&width=300"
-  },
-  {
-    title: "Project 2",
-    description: "A brief description of Project 2",
-    technologies: ["Vue.js", "Express", "PostgreSQL"],
-    link: "https://project2.com",
-    image: "/placeholder.svg?height=200&width=300"
-  },
-  {
-    title: "Project 3",
-    description: "A brief description of Project 3",
-    technologies: ["React Native", "Firebase", "Redux"],
-    link: "https://project3.com",
-    image: "/placeholder.svg?height=200&width=300"
-  },
+    title: "Immutable X",
+    description: " This project leverages to virtualize valueable object using blockchain and it is transprancy.",
+    technologies: ["Clean Architecture","React", "Redux","Node.js","Smart Contract","EtherJs","SpringBoot","Redis"],
+    link: [{name:"Client",url:"https://github.com/rajsekarhm/immutableXclient"},{name:"Server",url:"https://github.com/rajsekarhm/immutableXserver"}],
+    image: _image
+  }
 ]
 
 export default function Projects() {
@@ -33,14 +22,14 @@ export default function Projects() {
         <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <motion.div
+            <Framermotion.motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                <img src={"./image/immutableX.png"} alt={project.title} className="w-full h-48 object-cover" />
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
@@ -56,12 +45,18 @@ export default function Projects() {
                       ))}
                     </div>
                   </div>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    View Project
-                  </a>
+                  <div className="flex flex-wrap gap-2">
+                  {project.link.length ? project.link.map((ele) => {
+                    return(
+                    <Button>
+                      <a href={ele.url} target="_blank" rel="noopener noreferrer" className="text-white-500 hover:underline">
+                      {ele.name}
+                    </a>  </Button>)
+                  }) : null}
+                  </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </Framermotion.motion.div>
           ))}
         </div>
       </div>
