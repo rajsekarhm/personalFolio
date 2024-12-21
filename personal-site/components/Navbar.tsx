@@ -11,6 +11,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
+import {useRouter} from "next/navigation"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const navItems = [
@@ -22,6 +23,9 @@ const navItems = [
 ]
 
 export function Navbar() {
+  console.log(useRouter)
+  const router = useRouter()
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -34,6 +38,11 @@ export function Navbar() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
+             <NavigationMenuItem key={'voygage'}>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={()=>router.push('/voyage')}>
+                  Voyage
+                </NavigationMenuLink>
+              </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         <Sheet>
