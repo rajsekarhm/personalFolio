@@ -25,7 +25,7 @@ interface VoyageCardProps {
   memory: Memory;
 }
 
-function CarouselDemo({ images }: any) {
+function CarouselDemo({ images }: {images:any}) {
   return (
     <Carousel className="w-full max-w-screen w-96 h-96">
       <CarouselContent>
