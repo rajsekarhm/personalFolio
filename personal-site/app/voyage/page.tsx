@@ -3,110 +3,32 @@ import { Timeline } from "@/components/timeline";
 const sampleMemories = [
   {
     id: "1",
-    date: new Date("2024-03-15"),
-    title: "Malaysia",
-    description: "Watching the most beautiful sunset I've ever seen from Oia. The white-washed buildings created the perfect backdrop as the sky turned into a canvas of orange and pink hues. The Mediterranean breeze carried the scent of local cuisine while church bells chimed in the distance.",
-    location: "Oia, Santorini",
-    mediaType: "image",
-    mediaUrl: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    memories:[ {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    },
-    {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    },
-    {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    }]
-  },
-  {
-    id: "2",
-    date: new Date("2024-03-10"),
+    date: new Date("2025-01-11"),
     title: "Kedarkantha",
-    description: "Gliding through the historic canals of Venice in a gondola, passing under ancient bridges and beside centuries-old palazzos. The water gently lapped against the buildings while our gondolier shared stories of the city's rich history.",
-    location: "Venice, Italy",
+    description:"Conquered kedarkantha trek. this is my first trek. it so good :)",
+    location: "Sankiri, Uttarkhand",
     mediaType: "image",
-    mediaUrl:  "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    memories:[ {
-      title: "video",
-      mediaType: "video",
-      mediaUrl:
-        "https://www.w3schools.com/html/mov_bbb.mp4",
+    mediaUrl: "https://i.im.ge/2025/01/19/HMTb10.IMG-0770.jpeg",
+    memories:[{
+      title: "image",
+      mediaType: "image",
+      mediaUrl:"https://i.im.ge/2025/01/19/HMTRXL.IMG-8115.jpeg",
+    }, {
+      title: "image",
+      mediaType: "image",
+      mediaUrl:"https://i.im.ge/2025/01/19/HMTUY8.IMG-7803.jpeg",
     },
     {
       title: "image",
       mediaType: "image",
       mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
+        "https://i.im.ge/2025/01/19/HMTb10.IMG-0770.jpeg",
     },
     {
       title: "image",
       mediaType: "image",
       mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    }]
-  },
-  {
-    id: "3",
-    date: new Date("2024-03-15"),
-    title: "Malaysia",
-    description: "Watching the most beautiful sunset I've ever seen from Oia. The white-washed buildings created the perfect backdrop as the sky turned into a canvas of orange and pink hues. The Mediterranean breeze carried the scent of local cuisine while church bells chimed in the distance.",
-    location: "Oia, Santorini",
-    mediaType: "image" as "image" | "video",
-    mediaUrl: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    memories:[ {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    },
-    {
-      title: "video",
-      mediaType: "video",
-      mediaUrl:
-        "https://www.w3schools.com/html/mov_bbb.mp4",
-    },
-    {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    }]
-  },
-  {
-    id: "4",
-    date: new Date("2024-03-15"),
-    title: "Malaysia",
-    description: "Watching the most beautiful sunset I've ever seen from Oia. The white-washed buildings created the perfect backdrop as the sky turned into a canvas of orange and pink hues. The Mediterranean breeze carried the scent of local cuisine while church bells chimed in the distance.",
-    location: "Oia, Santorini",
-    mediaType: "video" as "image" | "video",
-    mediaUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
-    memories:[ {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    },
-    {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
-    },
-    {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000",
+        "https://i.im.ge/2025/01/19/HMTEam.IMG-3840.jpeg",
     }]
   }
 ];
@@ -128,3 +50,13 @@ export default function Voyage() {
     </main>
   )
 }
+
+
+/**
+ * https://drive.google.com/file/d/1eGar_kd5kWZ70ekmDdHhj-RYV_hxtFxR/view?usp=sharing
+ * https://drive.google.com/file/d/1oxldK188txlhZKzHmpjPsAq2X7BcPfp-/view?usp=sharing
+ * https://drive.google.com/file/d/1GPSCR3q_pznrtIq1S8EQHXce35oNLa2R/view?usp=sharing
+ * https://drive.google.com/file/d/1hipQsArAMyL6Kc1kHNeXTckoqvaqDQkK/view?usp=sharing
+ * https://drive.google.com/file/d/1TwydObhfJqfaCLkUIczLzHTKWVV1RLIh/view?usp=sharing
+ * https://drive.google.com/file/d/1ofhrMKe5F47HBp-_UkVrc67kf680SWQ-/view?usp=sharing
+ */
