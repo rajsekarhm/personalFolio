@@ -48,6 +48,7 @@
     "embla-carousel-react": "^8.5.1",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
+    "express": "^4.21.2",
     "framer-motion": "^4.1.17",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.468.0",
@@ -75,6 +76,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.16",
+    "nodemailer": "^6.9.16",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

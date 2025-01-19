@@ -84,11 +84,12 @@ export function VoyageCard({ memory }: VoyageCardProps) {
           <DrawerTrigger asChild>
             <AspectRatio ratio={12 / 5} className="overflow-hidden rounded-md">
               {memory.mediaType === "image" ? (
-                <img
-                  src={memory.mediaUrl}
+                <div key={memory.id}>
+                  <img src={memory.mediaUrl}
                   alt={memory.title}
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
-                />
+                  />
+                  </div>
               ) : (
                 <video
                   src={memory.mediaUrl}
