@@ -31,16 +31,16 @@ type memeoriestype = {
   mediaUrl:string,
 }
 
-type content = {
-  id: string,
-  date:Date,
-  title:string,
-  description:string,
-  location: string,
-  mediaType:string,
-  mediaUrl: string,
-  memories:memeoriestype[]
-}
+// type content = {
+//   id: string,
+//   date:Date,
+//   title:string,
+//   description:string,
+//   location: string,
+//   mediaType:string,
+//   mediaUrl: string,
+//   memories:memeoriestype[]
+// }
 
 function CarouselDemo({content} : {content:memory[]}) {
   return (
