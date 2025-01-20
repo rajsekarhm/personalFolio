@@ -1,5 +1,5 @@
 
-type displayType = {
+export type memory = {
     title:string
     mediaType: string
     mediaUrl:string
@@ -12,5 +12,5 @@ export interface Memory {
   location: string;
   mediaType: 'image' | 'video';
   mediaUrl: string;
-  memories?:displayType[]
+  memories : memory[]
 }

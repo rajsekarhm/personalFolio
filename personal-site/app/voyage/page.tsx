@@ -1,6 +1,7 @@
 import { Timeline } from "@/components/timeline";
+import { Memory } from "../types";
 
-const sampleMemories = [
+const sampleMemories:Memory[] = [
   {
     id: "1",
     date: new Date("2025-01-11"),
@@ -51,12 +52,3 @@ export default function Voyage() {
   )
 }
 
-
-/**
- * https://drive.google.com/file/d/1eGar_kd5kWZ70ekmDdHhj-RYV_hxtFxR/view?usp=sharing
- * https://drive.google.com/file/d/1oxldK188txlhZKzHmpjPsAq2X7BcPfp-/view?usp=sharing
- * https://drive.google.com/file/d/1GPSCR3q_pznrtIq1S8EQHXce35oNLa2R/view?usp=sharing
- * https://drive.google.com/file/d/1hipQsArAMyL6Kc1kHNeXTckoqvaqDQkK/view?usp=sharing
- * https://drive.google.com/file/d/1TwydObhfJqfaCLkUIczLzHTKWVV1RLIh/view?usp=sharing
- * https://drive.google.com/file/d/1ofhrMKe5F47HBp-_UkVrc67kf680SWQ-/view?usp=sharing
- */

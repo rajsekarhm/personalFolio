@@ -1,6 +1,6 @@
 "use client";
 
-import { Memory } from "@/app/types";
+import { Memory, memory } from "@/app/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -21,15 +21,32 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-interface VoyageCardProps {
+export interface VoyageCardProps {
   memory: Memory;
 }
 
-function CarouselDemo({ images }: any) {
+type memeoriestype = {
+  title: string,
+  mediaType: string,
+  mediaUrl:string,
+}
+
+type content = {
+  id: string,
+  date:Date,
+  title:string,
+  description:string,
+  location: string,
+  mediaType:string,
+  mediaUrl: string,
+  memories:memeoriestype[]
+}
+
+function CarouselDemo({content} : {content:memory[]}) {
   return (
     <Carousel className="w-full max-w-screen w-96 h-96">
       <CarouselContent>
-        {images.map((image, index) => {
+        {content.map((image, index) => {
           return(
           <CarouselItem key={index}>
             <div className="p-8">
@@ -40,9 +57,9 @@ function CarouselDemo({ images }: any) {
                     src={
                       image.mediaUrl
                     }
-                    alt={       image.title}
+                    alt={image.title}
                     className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
-                  />: <video
+                  /> : <video
                   src={image.mediaUrl}
                   controls
                   className="w-full h-full object-contain"
@@ -108,7 +125,7 @@ export function VoyageCard({ memory }: VoyageCardProps) {
         <DrawerContent className="flex items-center max-w-screen">
         <DrawerHeader>
             <CarouselDemo
-              images={memory.memories}
+              content={memory.memories}
             />
           </DrawerHeader>
         </DrawerContent>
@@ -116,3 +133,5 @@ export function VoyageCard({ memory }: VoyageCardProps) {
     </Drawer>
   );
 }
+
+
