@@ -25,11 +25,11 @@ export interface VoyageCardProps {
   memory: Memory;
 }
 
-type memeoriestype = {
-  title: string,
-  mediaType: string,
-  mediaUrl:string,
-}
+// type memeoriestype = {
+//   title: string,
+//   mediaType: string,
+//   mediaUrl:string,
+// }
 
 // type content = {
 //   id: string,
