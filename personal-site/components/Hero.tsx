@@ -19,7 +19,7 @@ export default function Hero() {
             Full Stack Developer | Blockchain | DApps
           </p>
           <p className="mb-8 max-w-2xl mx-auto text-gray-600">
-            I am a passionate developer with 2.5 years of experience in building web applications.
+            I am a passionate developer with 1.5 years of experience in building web applications.
             My expertise includes JavaScript, React, Node.js, Java, Solidity and cloud technologies.
           </p>
           <div className="flex justify-center space-x-4">

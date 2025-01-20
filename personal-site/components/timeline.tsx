@@ -1,14 +1,14 @@
 "use client";
-
-import { Memory } from "@/app/types";
 import { VoyageCard } from "@/components/voyage-card";
 import { Separator } from "@/components/ui/separator";
+import { Memory } from "@/app/types";
+
 
 interface TimelineProps {
-  memories: any[];
+  memories: Memory[];
 }
 
-export function Timeline({ memories }: TimelineProps) {
+export function Timeline({ memories }: {memories:Memory[]}) {
   return (
     <div className="space-y-8 relative">
       <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2" />
