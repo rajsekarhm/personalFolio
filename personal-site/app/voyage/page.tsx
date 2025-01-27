@@ -1,5 +1,6 @@
 import { Timeline } from "@/components/timeline";
 import { Memory } from "../types";
+import getAllContent from "@/api/getContent";
 
 const sampleMemories:Memory[] = [
   {
@@ -35,6 +36,7 @@ const sampleMemories:Memory[] = [
 ];
 
 export default function Voyage() {
+  getAllContent()
   return (
     <main className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
