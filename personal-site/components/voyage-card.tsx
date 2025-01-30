@@ -27,6 +27,9 @@ import Image from "next/image";
 
 
 
+// eslint-disable-next-line   @typescript-eslint/no-require-imports
+
+
 function CarouselDemo({ content }: { content: memory[] }) {
   return (
     <Carousel className="w-full max-w-screen w-96 h-96">

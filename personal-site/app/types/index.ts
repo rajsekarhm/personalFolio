@@ -1,8 +1,10 @@
 
+type anny = any 
+
 export type memory = {
     title:string
     mediaType: string
-    mediaUrl:string | any
+    mediaUrl:string | anny
 }
 export interface Memory {
   id: string;
@@ -11,6 +13,6 @@ export interface Memory {
   description: string;
   location: string;
   mediaType: 'image' | 'video';
-  mediaUrl: string|any;
+  mediaUrl: string |anny ;
   memories : memory[]
 }

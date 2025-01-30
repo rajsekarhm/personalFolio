@@ -2,7 +2,7 @@
 
 import { Timeline } from "@/components/timeline";
 import { Memory } from "../types";
-import getAllContent from "@/api/getContent";
+// import getAllContent from "@/api/getContent";
 
 const sampleMemories:Memory[] = [
   {
