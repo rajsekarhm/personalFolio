@@ -1,11 +1,9 @@
-
-type anny = any 
-
 export type memory = {
     title:string
     mediaType: string
-    mediaUrl:string | anny
+    mediaUrl:string
 }
+
 export interface Memory {
   id: string;
   date: Date;
@@ -13,6 +11,6 @@ export interface Memory {
   description: string;
   location: string;
   mediaType: 'image' | 'video';
-  mediaUrl: string |anny ;
+  mediaUrl: string ;
   memories : memory[]
 }
