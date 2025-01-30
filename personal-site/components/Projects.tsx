@@ -50,7 +50,8 @@ export default function Projects() {
             >
               <Card className="overflow-hidden">
                 <Image
-                  src={_image}
+
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"
                 />

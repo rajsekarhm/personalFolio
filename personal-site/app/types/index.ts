@@ -2,7 +2,7 @@
 export type memory = {
     title:string
     mediaType: string
-    mediaUrl:string
+    mediaUrl:string | any
 }
 export interface Memory {
   id: string;
@@ -11,6 +11,6 @@ export interface Memory {
   description: string;
   location: string;
   mediaType: 'image' | 'video';
-  mediaUrl: string;
+  mediaUrl: string|any;
   memories : memory[]
 }
