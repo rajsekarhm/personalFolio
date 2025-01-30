@@ -19,56 +19,48 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-
+} from "@/components/ui/carousel"
 export interface VoyageCardProps {
   memory: Memory;
 }
+import Image from "next/image";
 
-// type memeoriestype = {
-//   title: string,
-//   mediaType: string,
-//   mediaUrl:string,
-// }
 
-// type content = {
-//   id: string,
-//   date:Date,
-//   title:string,
-//   description:string,
-//   location: string,
-//   mediaType:string,
-//   mediaUrl: string,
-//   memories:memeoriestype[]
-// }
 
-function CarouselDemo({content} : {content:memory[]}) {
+// eslint-disable-next-line   @typescript-eslint/no-require-imports
+
+
+function CarouselDemo({ content }: { content: memory[] }) {
   return (
     <Carousel className="w-full max-w-screen w-96 h-96">
       <CarouselContent>
         {content.map((image, index) => {
-          return(
-          <CarouselItem key={index}>
-            <div className="p-8">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-8">
-                {image.mediaType == "image" ? 
-                  <img
-                    src={
-                      image.mediaUrl
-                    }
-                    alt={image.title}
-                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
-                  /> : <video
-                  src={image.mediaUrl}
-                  controls
-                  className="w-full h-full object-contain"
-                />}
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        )})}
+          return (
+            <CarouselItem key={index}>
+              <div className="p-8">
+                <Card>
+                  <CardContent className="flex aspect-square items-center justify-center p-8">
+                    {image.mediaType == "image" ? (
+                       <Image
+                       height={1200}
+                       width={300}
+                         src={require(`../content/${image.mediaUrl}`)}
+                         alt={image.title}
+                         className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                         />
+                    ) : (
+                      <video
+                        src={image.mediaUrl}
+                        controls
+                        className="w-full h-full object-contain"
+                      />
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          );
+        })}
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
@@ -76,7 +68,7 @@ function CarouselDemo({content} : {content:memory[]}) {
   );
 }
 
-export function VoyageCard({ memory }: VoyageCardProps) {
+export async function VoyageCard({ memory }: VoyageCardProps) {
   return (
     <Drawer>
       <Card className="w-full max-w-3xl hover:shadow-lg transition-shadow duration-200">
@@ -97,16 +89,19 @@ export function VoyageCard({ memory }: VoyageCardProps) {
             </div>
           </div>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-5">
           <DrawerTrigger asChild>
             <AspectRatio ratio={12 / 5} className="overflow-hidden rounded-md">
               {memory.mediaType === "image" ? (
-                <div key={memory.id}>
-                  <img src={memory.mediaUrl}
+                <div key={memory.id} className="flex justify-center items-center h-auto py-4" >
+                  <Image
+                  height={1200}
+                  width={300}
+                  src={require(`../content/${memory.mediaUrl}`)}
                   alt={memory.title}
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover  hover:scale-105 transition-transform duration-300"
                   />
-                  </div>
+                </div>
               ) : (
                 <video
                   src={memory.mediaUrl}
@@ -123,15 +118,11 @@ export function VoyageCard({ memory }: VoyageCardProps) {
           </ScrollArea>
         </CardContent>
         <DrawerContent className="flex items-center max-w-screen">
-        <DrawerHeader>
-            <CarouselDemo
-              content={memory.memories}
-            />
+          <DrawerHeader>
+            <CarouselDemo content={memory.memories} />
           </DrawerHeader>
         </DrawerContent>
       </Card>
     </Drawer>
   );
 }
-
-

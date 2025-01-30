@@ -1,6 +1,8 @@
+'use client'
+
 import { Timeline } from "@/components/timeline";
 import { Memory } from "../types";
-import getAllContent from "@/api/getContent";
+// import getAllContent from "@/api/getContent";
 
 const sampleMemories:Memory[] = [
   {
@@ -10,33 +12,28 @@ const sampleMemories:Memory[] = [
     description:"Conquered kedarkantha trek. this is my first trek. it so good :)",
     location: "Sankiri, Uttarkhand",
     mediaType: "image",
-    mediaUrl: "https://i.im.ge/2025/01/19/HMTb10.IMG-0770.jpeg",
+    mediaUrl: 'Kedarkantha-1.jpg',
     memories:[{
       title: "image",
       mediaType: "image",
-      mediaUrl:"https://i.im.ge/2025/01/19/HMTRXL.IMG-8115.jpeg",
+      mediaUrl:"Kedarkantha-2.jpg",
     }, {
       title: "image",
       mediaType: "image",
-      mediaUrl:"https://i.im.ge/2025/01/19/HMTUY8.IMG-7803.jpeg",
+      mediaUrl:"Kedarkantha-3.jpg",
     },
     {
       title: "image",
       mediaType: "image",
       mediaUrl:
-        "https://i.im.ge/2025/01/19/HMTb10.IMG-0770.jpeg",
-    },
-    {
-      title: "image",
-      mediaType: "image",
-      mediaUrl:
-        "https://i.im.ge/2025/01/19/HMTEam.IMG-3840.jpeg",
-    }]
+        "Kedarkantha-4.jpg",
+    }
+  ]
   }
 ];
 
 export default function Voyage() {
-  getAllContent()
+  // getAllContent()
   return (
     <main className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">

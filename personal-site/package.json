@@ -51,7 +51,7 @@
     "framer-motion": "^4.1.17",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.468.0",
-    "next": "14.2.16",
+    "next": "^15.2.0-canary.33",
     "next-themes": "^0.3.0",
     "postcss": "8.4.30",
     "react": "^18",

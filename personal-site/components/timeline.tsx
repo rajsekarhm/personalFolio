@@ -3,11 +3,6 @@ import { VoyageCard } from "@/components/voyage-card";
 import { Separator } from "@/components/ui/separator";
 import { Memory } from "@/app/types";
 
-
-// interface TimelineProps {
-//   memories: Memory[];
-// }
-
 export function Timeline({ memories }: {memories:Memory[]}) {
   return (
     <div className="space-y-8 relative">

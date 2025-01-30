@@ -17,7 +17,7 @@ function getAllContent(){
       
       var req = http.request(options, function (res:any) {
         var chunks:Array<any> = [];
-        const fileStream = fs.createWriteStream(path.resolve("./","imageFolder.txt"));
+        const fileStream = fs.createWriteStream(path.resolve(process.cwd(),"imageInfo.txt"));
         res.pipe(fileStream);
         fileStream.on('finish', () => {
           fileStream.close();
@@ -37,18 +37,16 @@ function getAllContent(){
       
       req.end();
 
-    const imagePath = path.resolve("./","imageFolder.txt")
-    const outputImageFolderPath = path.resolve("./","imageFolderOutput")
-    ! fs.existsSync(outputImageFolderPath) &&fs.mkdir(outputImageFolderPath,()=>{})
+    const imagePath = path.resolve(process.cwd(),"imageInfo.txt")
+    const outputImageFolderPath = path.resolve(process.cwd(),"content")
+    ! fs.existsSync(outputImageFolderPath) && fs.mkdir(outputImageFolderPath,()=>{})
     var imageContent = fs.readFileSync(imagePath,'utf-8')
     imageContent = JSON.parse(imageContent)
-    console.log("imageContent",imageContent.length)
     imageContent.forEach(async (ele,index) => {
-        console.log("index",index)
         const result = await Base64ImageConverter.saveBase64Image(
-            ele,
+            ele.content,
             outputImageFolderPath,
-            `image-${index}.jpg`
+            `${ele.uniqueIdName}`
           );
     })
 
