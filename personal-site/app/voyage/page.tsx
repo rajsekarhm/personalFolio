@@ -1,16 +1,8 @@
 'use client'
 
-import { Timeline } from "@/components/Timeline";
+import { Timeline } from "../../components/Timeline";
 import { Memory } from "../types";
-
 // import getAllContent from "@/api/getContent";
-
-/**
- * /Users/raja-17710/portfolioXClient/personal-site/content/Kedarkantha-1.jpg
- * /Users/raja-17710/portfolioXClient/personal-site/content/Kedarkantha-2.jpg
- * /Users/raja-17710/portfolioXClient/personal-site/content/Kedarkantha-3.jpg
- * /Users/raja-17710/portfolioXClient/personal-site/content/Kedarkantha-4.jpg
- */
 
 const sampleMemories:Memory[] = [
   {
