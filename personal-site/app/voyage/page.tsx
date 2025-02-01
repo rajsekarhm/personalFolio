@@ -1,6 +1,6 @@
 'use client'
 
-import { Timeline } from "@/components/timeline";
+import { Timeline } from "../../components/Timeline";
 import { Memory } from "../types";
 // import getAllContent from "@/api/getContent";
 
@@ -21,6 +21,12 @@ const sampleMemories:Memory[] = [
       title: "image",
       mediaType: "image",
       mediaUrl:"Kedarkantha-3.jpg",
+    },
+    {
+      title: "image",
+      mediaType: "image",
+      mediaUrl:
+        "Kedarkantha-4.jpg",
     },
     {
       title: "image",

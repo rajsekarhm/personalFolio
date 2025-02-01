@@ -7,8 +7,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -24,11 +22,15 @@ export default function Contact() {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl">Get in Touch</CardTitle>
-              <CardDescription>
+               {/* <CardDescription>
                 Fill out the form below to send me a message
-              </CardDescription>
+              </CardDescription> */}
+
             </CardHeader>
-            <CardContent>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajsekar.haribalan333@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Button  className="ml-12 mb-4" type="submit"  >Send Message</Button>
+            </a>
+       {/*}     <CardContent>
               <form className="space-y-4">
                 <div>
                   <label
@@ -37,7 +39,7 @@ export default function Contact() {
                   >
                     Name
                   </label>
-                  <Input type="text" id="name" name="name" required />
+                  <Input type="text" id="name" name="name"  />
                 </div>
                 <div>
                   <label
@@ -46,7 +48,7 @@ export default function Contact() {
                   >
                     Email
                   </label>
-                  <Input type="email" id="email" name="email" required />
+                  <Input type="email" id="email" name="email"  />
                 </div>
                 <div>
                   <label
@@ -55,11 +57,10 @@ export default function Contact() {
                   >
                     Message
                   </label>
-                  <Textarea id="message" name="message" rows={4} required />
-                </div>
-                <Button type="submit">Send Message</Button>
-              </form>
-            </CardContent>
+                  <Textarea id="message" name="message" rows={4}  />
+                </div> */}
+              {/* </form>
+            </CardContent> */}
           </Card>
         </motion.div>
       </div>
