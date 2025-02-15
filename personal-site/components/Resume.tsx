@@ -23,7 +23,7 @@ export default function Resume() {
                 Download my full resume to Know more about my skills, education, and professional experience.
               </p>
               <Button asChild>
-                <a href="/path-to-your-resume.pdf" download>
+                <a href="/image/RAJASEKAR-RESUME.pdf" download>
                   <FileDown className="mr-2 h-4 w-4" /> Download Resume (PDF)
                 </a>
               </Button>
