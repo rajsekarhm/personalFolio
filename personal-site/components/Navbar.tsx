@@ -19,7 +19,8 @@ const navItems = [
   { title: "Projects", href: "#projects" },
   { title: "Experience", href: "#experience" },
   { title: "Resume", href: "#resume" },
-  { title: "Contact", href: "#contact" }
+  { title: "Contact", href: "#contact" },
+  {title:"Voyage", href:"/voyage"}
 ]
 
 export function Navbar() {
@@ -36,11 +37,11 @@ export function Navbar() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
-             <NavigationMenuItem key={'voygage'}>
+             {/* <NavigationMenuItem key={'voygage'}>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={()=>router.push('/voyage')}>
                   Voyage
                 </NavigationMenuLink>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
           </NavigationMenuList>
         </NavigationMenu>
         <Sheet>
