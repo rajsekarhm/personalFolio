@@ -10,7 +10,6 @@ export function Timeline({ memories }: {memories:Memory[]}) {
 
   return (
     <div className="relative container">
-    {/* Media Banner */}
     <MediaBanner
       isOpen={!!selectedMedia}
       mediaUrl={selectedMedia?.url || ''}
@@ -18,7 +17,6 @@ export function Timeline({ memories }: {memories:Memory[]}) {
       onClose={() => setSelectedMedia(null)}
     />
 
-    {/* Vertical line */}
     <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-200" />
     
     {memories.map((memory, index) => {
@@ -65,7 +63,6 @@ export function Timeline({ memories }: {memories:Memory[]}) {
                  </div>
               )}
               
-              {/* Additional memories grid */}
               {memory.memories && memory.memories.length > 0 && (
                 <div className="grid grid-cols-3 gap-2">
                   {memory.memories.map((subMemory, idx) => {

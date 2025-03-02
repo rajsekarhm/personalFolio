@@ -10,7 +10,7 @@ function getAllContent(){
         'port': 8080,
         'path': '/api/v1/files/getAllContent/voyage-personalsite',
         'headers': {
-          'Cookie': 'JSESSIONID=57227C0C86D48801C93BE88F58EBEC5E'
+          'Cookie': ''
         },
         'maxRedirects': 20
       };

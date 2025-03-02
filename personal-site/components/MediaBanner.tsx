@@ -32,13 +32,13 @@ export function MediaBanner({ mediaUrl, mediaType, isOpen, onClose }: MediaBanne
             />
           ) : (
             <video
-              src={require(`../content/${mediaUrl}`)}
               className="w-full h-full object-contain"
               controls
               autoPlay
               playsInline
             >
-              Your browser does not support the video tag.
+               <source src={require(`../content/${mediaUrl}`)} type='video/mp4' >
+               </source>
             </video>
           )}
         </div>
