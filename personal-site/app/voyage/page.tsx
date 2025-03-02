@@ -40,7 +40,7 @@ const sampleMemories:Memory[] = [
     id: "2",
     date: new Date("2024-02-28"),
     title: "Malaysia Diaries",
-    description:"Conquered kedarkantha trek. this is my first trek. it so good :)",
+    description:"Leisure trip and my first international trip :)",
     location: "KL, Malaysia",
     mediaType: "image",
     mediaUrl: 'Malaysia-1.jpg',
