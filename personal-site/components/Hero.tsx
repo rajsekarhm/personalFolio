@@ -13,14 +13,13 @@ export default function Hero() {
           className="text-center"
         >
           <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-            Raja Sekar
+            Raja Sekar H
           </h1>
           <p className="text-xl mb-8 text-gray-600">
             Full Stack Developer | Blockchain | DApps
           </p>
-          <p className="mb-8 max-w-2xl mx-auto text-gray-600">
-            I am a passionate developer with 1.5 years of experience in building web applications.
-            My expertise includes JavaScript, React, Node.js, Java, Solidity and cloud technologies.
+          <p className="mb-8 max-w-8xl mx-auto text-gray-600">
+             Software Developer with 1.5+ years of building in full-stack development, DevOps automation, and clean architecture design. Demonstrated success in modernizing legacy systems and creating automation frameworks. Adept in JavaScript, SQL, Node.js, Java, Python and Smart Contract Development (solidity), I excel at delivering scalable, high-quality solutions that directly align with business requirements.
           </p>
           <div className="flex justify-center space-x-4">
             <Button asChild>

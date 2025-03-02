@@ -8,7 +8,7 @@ const sampleMemories:Memory[] = [
   {
     id: "1",
     date: new Date("2025-01-11"),
-    title: "Kedarkantha",
+    title: "Kedarkantha Peak",
     description:"Conquered kedarkantha trek. this is my first trek. it so good :)",
     location: "Sankiri, Uttarkhand",
     mediaType: "image",
@@ -32,7 +32,27 @@ const sampleMemories:Memory[] = [
       title: "image",
       mediaType: "image",
       mediaUrl:
-        "Kedarkantha-4.jpg",
+        "Kedarkantha-5.jpg",
+    }
+  ]
+  },
+  {
+    id: "2",
+    date: new Date("2024-02-28"),
+    title: "Malaysia Diaries",
+    description:"Conquered kedarkantha trek. this is my first trek. it so good :)",
+    location: "KL, Malaysia",
+    mediaType: "image",
+    mediaUrl: 'Malaysia-1.jpg',
+    memories:[{
+      title: "image",
+      mediaType: "image",
+      mediaUrl:"Malaysia-2.jpg",
+    },
+    {
+      title: "image",
+      mediaType: "image",
+      mediaUrl:"Malaysia-3.jpg",
     }
   ]
   }

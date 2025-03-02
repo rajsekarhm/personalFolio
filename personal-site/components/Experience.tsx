@@ -4,16 +4,17 @@ import * as Framermotion from "framer-motion"
 
 const experiences = [
   {
-    company: "Company X",
-    position: "Software Developer I",
+    company: "Zoho Corporation",
+    position: "Member of Technical Staff",
     duration: "June 2023 - Present",
     responsibilities: [
-      `I have contributed to defining fitness functions for Zoho Desk, with a primary focus on establishing and enforcing code standards, developing test strategies, and ensuring adherence to clean architecture principles.Additionally, I have introduced and optimised stages within CI pipelines`,` I focus on improving code quality and readability. I have developed a Node.js library that integrates ESLint with SonarQube to provide code metrics during development and CI processes.
-    `,`I also worked in pre-commit library for ESLint to enforce code checks before commits and handle exemption cases effectively.`
+    `Engineered an end-to-end testing tool that reduced manual testing efforts by 40% and accelerated CI/CD pipeline execution. Designed and released an abstraction layer using Playwright APIs (distributed as an NPM package) to automate recurring testing tasks, ensuring consistency and efficiency across projects.`,
+     `Architecture & Enhancing Code Quality: Implementation of standardized contracts and a clean architecture model for Zoho Desk’s platform library, significantly improving maintainability and scalability across modules. Authored a Node.js library that integrated ESLint with SonarQube, resulting in a 25% drop in code quality issues reported during CI/CD checks.`,
+    `Streamlining Processes & Deployment: Optimized pre-commit workflows by developing custom plugins that enforce coding standards, cutting manual review time by 15%.`
     ]
   },
   {
-    company: "Company X",
+    company: "Zoho Corporation",
     position: "Intership",
     duration: "Oct 2022 - May 2023",
     responsibilities: [
