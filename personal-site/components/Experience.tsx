@@ -9,7 +9,7 @@ const experiences = [
     duration: "June 2023 - Present",
     responsibilities: [
     `Engineered an end-to-end testing tool that reduced manual testing efforts by 40% and accelerated CI/CD pipeline execution. Designed and released an abstraction layer using Playwright APIs (distributed as an NPM package) to automate recurring testing tasks, ensuring consistency and efficiency across projects.`,
-     `Architecture & Enhancing Code Quality: Implementation of standardized contracts and a clean architecture model for Zoho Desk’s platform library, significantly improving maintainability and scalability across modules. Authored a Node.js library that integrated ESLint with SonarQube, resulting in a 25% drop in code quality issues reported during CI/CD checks.`,
+    `Architecture & Enhancing Code Quality: Implementation of standardized contracts and a clean architecture model for Zoho Desk's platform library, significantly improving maintainability and scalability across modules. Authored a Node.js library that integrated ESLint with SonarQube, resulting in a 25% drop in code quality issues reported during CI/CD checks.`,
     `Streamlining Processes & Deployment: Optimized pre-commit workflows by developing custom plugins that enforce coding standards, cutting manual review time by 15%.`
     ]
   },

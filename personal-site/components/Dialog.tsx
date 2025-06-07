@@ -10,7 +10,6 @@ import {
   DialogTitle
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
 import { Label } from "@/components/ui/label";
 
 export default function OnPopupDialogBox({isOpen,inputValue,submittedValue,setOpen,setInputValue,setSubmittedValue,handleSubmit} : any) {
