@@ -24,7 +24,7 @@ export default function Resume() {
                 View my full resume to Know more about my skills, education, and professional experience.
               </p>
               <Button asChild>
-              <a href="https://drive.google.com/file/d/1geksTHK-GGYl-tlPWKWy2JOT3HAIAeJQ/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1bxV7UFtzVVbr8L06-8OoqtkfRMh5r3ga/view?usp=sharing" target="_blank">
               <FileDown className="mr-2 h-4 w-4" /> View Resume (PDF)
                 </a>
               </Button>
