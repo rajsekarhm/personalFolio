@@ -1,5 +1,4 @@
 'use client'
-
 import { Timeline } from "../../components/Timeline";
 import { Memory } from "../types";
 // import getAllContent from "@/api/getContent";
@@ -76,4 +75,6 @@ export default function Voyage() {
     </main>
   )
 }
+
+
 

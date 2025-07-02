@@ -16,10 +16,10 @@ export default function Hero() {
             Raja Sekar
           </h1>
           <p className="text-xl mb-8 text-gray-600">
-            Software Engineer | Technical Architect 
+            Software Architect 
           </p>
           <p className="mb-8 max-w-8xl mx-auto text-gray-600">
-             Software Developer with 2.5+ years of building in full-stack development, DevOps automation, and clean architecture design. Demonstrated success in modernizing legacy systems and creating frameworks. Adept in JavaScript, SQL, Node.js, Java and Python, I excel at delivering scalable, high-quality solutions that directly align with business requirements.
+          Software Developer with expertise in full-stack development, developer tooling, and automation infrastructure. Skilled in designing clean architectures, low-code SDKs, and scalable internal libraries. Proficient in JavaScript, Node.js, Python, and Java, with a strong focus on test automation, CI/CD optimization, and enforcing code quality through custom tooling. Passionate about building systems that streamline engineering workflows and improve developer experience across teams.
           </p>
           <div className="flex justify-center space-x-4">
             <Button asChild>
