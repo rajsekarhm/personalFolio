@@ -12,7 +12,14 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-export default function OnPopupDialogBox({isOpen,inputValue,submittedValue,setOpen,setInputValue,setSubmittedValue,handleSubmit} : any) {
+type secretDialogBox = {
+  isOpen:boolean
+  inputValue:string | number 
+  setOpen:(obj:boolean) => void
+  setInputValue:(obj:string) => void
+  handleSubmit: () => void
+}
+export default function OnPopupDialogBox({isOpen,inputValue,setOpen,setInputValue,handleSubmit} :secretDialogBox ) {
   return (
     <div>
       <Dialog open={isOpen} onOpenChange={setOpen}>

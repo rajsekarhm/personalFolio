@@ -1,6 +1,12 @@
 "use client";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import * as Framermotion from "framer-motion"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import * as Framermotion from "framer-motion";
 
 const experiences = [
   {
@@ -8,10 +14,13 @@ const experiences = [
     position: "Member of Technical Staff",
     duration: "June 2023 - Present",
     responsibilities: [
-    `Engineered an end-to-end testing tool that reduced manual testing efforts by 40% and accelerated CI/CD pipeline execution. Designed and released an abstraction layer using Playwright APIs (distributed as an NPM package) to automate recurring testing tasks, ensuring consistency and efficiency across projects.`,
-    `Architecture & Enhancing Code Quality: Implementation of standardized contracts and a clean architecture model for Zoho Desk's platform library, significantly improving maintainability and scalability across modules. Authored a Node.js library that integrated ESLint with SonarQube, resulting in a 25% drop in code quality issues reported during CI/CD checks.`,
-    `Streamlining Processes & Deployment: Optimized pre-commit workflows by developing custom plugins that enforce coding standards, cutting manual review time by 15%.`
-    ]
+      `Framework Development & Architecture : Engineered an end-to-end testing tool that reduced manual testing efforts by 40% and
+accelerated CI/CD pipeline execution. Designed and released an abstraction layer using Playwright APIs (distributed as an NPM package) to
+automate recurring testing tasks, ensuring consistency and efficiency across projects and implementing standardized contracts and a clean
+architecture model for Zoho Desk’s platform library, significantly improving maintainability and scalability across modules.`,
+      `Client SDK : Worked on the client SDK powering the platform, conducting proof of concepts and defining fitness functions to ensure quality.
+The SDK is designed to enable feature convergence with a low-code approach.`,
+    ],
   },
   {
     company: "Zoho Corporation",
@@ -19,9 +28,10 @@ const experiences = [
     duration: "Oct 2022 - May 2023",
     responsibilities: [
       `I contributed to architectural development and framework design, addressing and solving architecture constraints in Zoho Desk. During my tenure, I contributed to planning and developing a comprehensive testing tool aimed at acceptance and end-to-end (E2E) testing`,
-      `I focused on building an abstraction testing tool that encapsulated Playwright's core API, which we successfully published as an NPM package`
-]}
-]
+      `I focused on building an abstraction testing tool that encapsulated Playwright's core API, which we successfully published as an NPM package`,
+    ],
+  },
+];
 
 export default function Experience() {
   return (
@@ -39,7 +49,9 @@ export default function Experience() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl">{exp.position}</CardTitle>
-                  <CardDescription className="text-lg">{exp.company} | {exp.duration}</CardDescription>
+                  <CardDescription className="text-lg">
+                    {exp.company} | {exp.duration}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc pl-5 space-y-2">
@@ -54,6 +66,5 @@ export default function Experience() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
