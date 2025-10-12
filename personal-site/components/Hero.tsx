@@ -1,38 +1,14 @@
 "use client";
-import { Button } from "@/components/ui/button"
-import * as Framermotion from "framer-motion"
+import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative py-20 overflow-hidden">
-      <div className="container mx-auto px-4">
-        <Framermotion.motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
-          <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-            Raja Sekar
-          </h1>
-          <p className="text-xl mb-8 text-gray-600">
-            Software Architect 
-          </p>
-          <p className="mb-8 max-w-8xl mx-auto text-gray-600">
-          Software Developer with expertise in full-stack development, developer tooling, and automation infrastructure. Skilled in designing clean architectures, low-code SDKs, and scalable internal libraries. Proficient in JavaScript, Node.js, Python, and Java, with a strong focus on test automation, CI/CD optimization, and enforcing code quality through custom tooling. Passionate about building systems that streamline engineering workflows and improve developer experience across teams.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Button asChild>
-              <a href="#projects">View Projects</a>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="#contact">Contact Me</a>
-            </Button>
-          </div>
-        </Framermotion.motion.div>
-      </div>
-      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+    <section className="font-mono text-gray-400 text-center px-6 py-8 rounded-xl  shadow-md">
+      <h1 className="text-xl mb-2">Raja Sekar</h1>
+      <p className="text-lg mb-2">Software Architect</p>
+      <p className="text-sm leading-relaxed">
+        Software Developer with expertise in full-stack development, developer tooling, and automation infrastructure.
+      </p>
     </section>
-  )
+  );
 }
-

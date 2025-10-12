@@ -1,140 +1,75 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { Menu } from 'lucide-react'
+import React, { useState } from "react";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { 
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { Label } from "@/components/ui/label";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import {useRouter} from "next/navigation"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-
-const navItems = [
-  { title: "Home", href: "/" },
-  { title: "Projects", href: "#projects" },
-  { title: "Experience", href: "#experience" },
-  { title: "Resume", href: "#resume" },
-  { title: "Contact", href: "#contact" }
-]
+const navItems = [{ title: "Contact", href: "#contact" }];
 
 export function Navbar() {
-  const [open, setOpen] = useState(false);
-  const [isSecretWrong,setSecret] = useState(false)
   const [inputValue, setInputValue] = useState("");
-  const [submittedValue, setSubmittedValue] = useState<string | null>(null);
+  const [isSecretWrong, setSecret] = useState(false);
+
   const handleSubmit = () => {
-    setSubmittedValue(inputValue);
-    setOpen(false);
-    if(inputValue == "02-02-2002"){
-      router.push('/voyage')
-    }else{
-      setSecret(() => true)
-      setInputValue(() => "")
+    if (inputValue === "02-02-2002") {
+      alert("Access granted to Voyage!");
+    } else {
+      setSecret(true);
     }
   };
-  const handleVoyage = ()=> { 
-    setSecret(false) 
-    setOpen(true)}
-  const router = useRouter()
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
-        <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList>
-            {navItems.map((item) => (
-              <NavigationMenuItem key={item.title}>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()} href={item.href}>
-                  {item.title}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            ))}
-             <NavigationMenuItem key={'voyage'}>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={handleVoyage}>
-                  Voyage
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="outline" size="icon" className="w-10 px-0">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left">
-            <nav className="flex flex-col gap-4">
+    <header>
+      <div className="font-mono">
+        <nav>
+          <div className="flex items-center space-x-4">
+            <ul className="flex space-x-4">
               {navItems.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="block px-2 py-1 text-lg"
-                >
-                  {item.title}
-                </Link>
+                <li key={item.title}>
+                  <Link href={item.href} className="text-gray-400 text-s">
+                    {item.title}
+                  </Link>
+                </li>
               ))}
-            </nav>
-          </SheetContent>
-        </Sheet>
-        <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Enter Secret to View </DialogTitle>
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Input
-                id="name"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                className="col-span-4"
-                placeholder="Enter secret"
-              />
-            </div>
+            </ul>
+            <button
+              className="text-gray-400 text-s"
+              onClick={() => setSecret(true)}
+            >
+              Voyage
+            </button>
           </div>
-          {isSecretWrong ?     <Dialog open={isSecretWrong}>
-    <DialogContent className="sm:max-w-[425px]">
-      <DialogHeader>
-        <DialogTitle>Alert !</DialogTitle>
-        <DialogDescription>
-          Entered Wrong Secret :(
-        </DialogDescription>
-        <DialogFooter>
-            <Button variant="outline" onClick={() => setSecret(false)}>
-              Cancel
-            </Button>
-          </DialogFooter>
-      </DialogHeader>
-    </DialogContent>
-  </Dialog> : null}
-          <DialogFooter>
-            <Button variant="outline" onClick={() => setOpen(false)}>
-              Cancel
-            </Button>
-            <Button onClick={handleSubmit}>Submit</Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+        </nav>
       </div>
+
+      {isSecretWrong && (
+  <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+    <div className="font-mono bg-[#111] p-6 rounded-xl shadow-lg w-[90%] max-w-sm text-center">
+      <h3 className="text-gray-400 text-s mb-3">Enter Secret</h3>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        placeholder="Enter secret"
+        className="text-gray-400 text-s border p-2 rounded w-full mb-4 bg-transparent placeholder-gray-500"
+      />
+      <div className="flex justify-center space-x-4">
+        <button
+          onClick={handleSubmit}
+          className="text-gray-400 text-s border-2 border-gray-100 px-4 py-1 rounded hover:bg-gray-800"
+        >
+          Submit
+        </button>
+        <button
+          onClick={() => setSecret(false)}
+          className="text-gray-400 text-s border-2 border-gray-100 px-4 py-1 rounded hover:bg-gray-800"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
     </header>
-  )
+  );
 }
-
-
