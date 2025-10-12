@@ -15,24 +15,22 @@ export default function Hero() {
           <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
             Raja Sekar
           </h1>
-          <p className="text-xl mb-8 text-gray-600">
-            Software Architect 
-          </p>
-          <p className="mb-8 max-w-8xl mx-auto text-gray-600">
-          Software Developer with expertise in full-stack development, developer tooling, and automation infrastructure. Skilled in designing clean architectures, low-code SDKs, and scalable internal libraries. Proficient in JavaScript, Node.js, Python, and Java, with a strong focus on test automation, CI/CD optimization, and enforcing code quality through custom tooling. Passionate about building systems that streamline engineering workflows and improve developer experience across teams.
-          </p>
-          <div className="flex justify-center space-x-4">
+          <p className="text-xl leading-relaxed">
+      I am someone who enjoys solving problems, and I often use coding as a tool to find solutions. I have a passion for adventure and love to travel whenever I get the chance. I am also deeply curious and enjoy learning new skills at a fast pace, especially when something really grabs my interest.
+      </p>
+          {/* <div className="flex justify-center space-x-4">
             <Button asChild>
-              <a href="#projects">View Projects</a>
+              <a href="#resume">View Resume</a>
             </Button>
             <Button variant="outline" asChild>
               <a href="#contact">Contact Me</a>
             </Button>
-          </div>
+          </div> */}
         </Framermotion.motion.div>
       </div>
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
     </section>
   )
 }
+
 
