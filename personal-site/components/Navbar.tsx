@@ -20,6 +20,7 @@ const navItems = [
   { title: "Experience", href: "#experience" },
   { title: "Resume", href: "#resume" },
   { title: "Contact", href: "#contact" },
+  { title: "Voyage", href: "/voyage" },
 ]
 
 export function Navbar() {
@@ -38,11 +39,6 @@ export function Navbar() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
-             <NavigationMenuItem key={'voygage'}>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={()=> router.push('/voyage')}>
-                  Voyage
-                </NavigationMenuLink>
-              </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         <Sheet>

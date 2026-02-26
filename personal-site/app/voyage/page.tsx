@@ -11,27 +11,27 @@ const sampleMemories:Memory[] = [
     description:"Conquered kedarkantha trek. this is my first trek. it so good :)",
     location: "Sankiri, Uttarkhand",
     mediaType: "image",
-    mediaUrl: 'Kedarkantha-1.jpg',
+    mediaUrl: '1bCy5c5zJPHMFj5EWOxPxtEvP0sLxM9Fg',
     memories:[{
       title: "image",
       mediaType: "image",
-      mediaUrl:"Kedarkantha-2.jpg",
+      mediaUrl:"1It3Kvc997t3oK866WziY_vdxMlXZ3YAb",
     }, {
       title: "image",
       mediaType: "image",
-      mediaUrl:"Kedarkantha-3.jpg",
+      mediaUrl:"1giNRYatgitf1wdhDb2wtSapCa3rPBSv8",
     },
     {
       title: "image",
       mediaType: "image",
       mediaUrl:
-        "Kedarkantha-4.jpg",
+        "1_Bje1ZsAQPNEQEN8HsA4OssXOqzDOGmM",
     },
     {
       title: "image",
       mediaType: "image",
       mediaUrl:
-        "Kedarkantha-5.jpg",
+        "1XxOA67EEgrsx-EnghNyOZ471HUemtOij",
     }
   ]
   },
@@ -42,16 +42,16 @@ const sampleMemories:Memory[] = [
     description:"Leisure trip and my first international trip :)",
     location: "KL, Malaysia",
     mediaType: "image",
-    mediaUrl: 'Malaysia-1.jpg',
+    mediaUrl: "1Ff3DfkPJEC2LL0PXy_SomW-8qX-SIW1u",
     memories:[{
       title: "image",
       mediaType: "image",
-      mediaUrl:"Malaysia-2.jpg",
+      mediaUrl:"1SHSwritvdqhK0-xWEhKWwwxPQlX6KyWt",
     },
     {
       title: "image",
       mediaType: "image",
-      mediaUrl:"Malaysia-3.jpg",
+      mediaUrl:"1xjjxY1G9ryiWORwq5-v_WCBtp_nYqzlK",
     }
   ]
   }
